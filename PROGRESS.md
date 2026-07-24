@@ -11,7 +11,7 @@ Target: **300+ Problems**
 # 🟢 Arrays
 
 - [x] DSA #001 - Largest Element
-- [ ] DSA #002 - Smallest Element
+- [x] DSA #002 - Smallest Element
 - [ ] DSA #003 - Second Largest Element
 - [ ] DSA #004 - Second Smallest Element
 - [ ] DSA #005 - Sum of Array Elements

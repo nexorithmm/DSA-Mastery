@@ -56,7 +56,8 @@ Graphs
 
 ## ✅ Completed Problems
 
-- DSA #001 - Largest Element in an Array
+- ✅ DSA #001 - Largest Element in an Array
+- ✅ DSA #002 - Smallest Element
 
 ---
 

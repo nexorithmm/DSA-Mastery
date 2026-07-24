@@ -83,3 +83,84 @@ Example:
 ## Status
 
 ✅ Solved
+
+# DSA #002 - Smallest Element in Array
+
+## Problem Statement
+
+Given an integer array, find the smallest element.
+
+### Example
+
+Input:
+
+```text
+[10, 25, 8, 25, 15]
+```
+
+Output:
+
+```text
+8
+```
+
+---
+
+## Java Solution
+
+```java
+int[] array = {10, 25, 8, 25, 15};
+
+int smallestElement = array[0];
+
+for (int i = 1; i < array.length; i++) {
+
+    if (array[i] < smallestElement) {
+        smallestElement = array[i];
+    }
+
+}
+
+System.out.println("Smallest Element : " + smallestElement);
+```
+
+---
+
+## Approach
+
+- Assume the first element is the smallest.
+- Traverse the array from the second element.
+- Compare each element with the current smallest element.
+- Update the smallest element whenever a smaller value is found.
+- Print the final smallest element.
+
+---
+
+## Time Complexity
+
+```
+O(n)
+```
+
+Only one traversal of the array.
+
+---
+
+## Space Complexity
+
+```
+O(1)
+```
+
+Only one extra variable is used.
+
+---
+
+## Edge Cases
+
+- Single element array
+- Negative numbers
+- Duplicate values
+- Already sorted array
+
+

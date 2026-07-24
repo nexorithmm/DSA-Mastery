@@ -17,6 +17,11 @@ All notable changes to this project will be documented here.
 
 ---
 
-## 📅 Day 2
+## DSA #002 - Smallest Element in Array
 
-> Coming Soon...
+### ✅ Added
+
+- Solved the Smallest Element in Array problem.
+- Implemented an optimal single-pass solution.
+- Documented time and space complexity.
+- Added explanation and edge cases.

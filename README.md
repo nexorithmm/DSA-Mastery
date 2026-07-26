@@ -58,6 +58,7 @@ Graphs
 
 - ✅ DSA #001 - Largest Element in an Array
 - ✅ DSA #002 - Smallest Element
+- ✅ DSA #003 - Second Largest Element
 
 ---
 

@@ -84,6 +84,8 @@ Example:
 
 ✅ Solved
 
+---
+
 # DSA #002 - Smallest Element in Array
 
 ## Problem Statement
@@ -163,4 +165,90 @@ Only one extra variable is used.
 - Duplicate values
 - Already sorted array
 
+---
 
+# DSA #003 - Second Largest Element in Array
+
+## Problem Statement
+
+Given an integer array, find the **second largest distinct element**.
+
+### Example
+
+Input:
+
+```text
+[10, 25, 8, 25, 15]
+```
+
+Output:
+
+```text
+15
+```
+
+---
+
+## Java Solution
+
+```java
+int[] array = {10, 25, 8, 25, 15};
+
+int largestNumber = array[0];
+int secondLargestNumber = Integer.MIN_VALUE;
+
+for (int i = 1; i < array.length; i++) {
+
+    if (array[i] > largestNumber) {
+        secondLargestNumber = largestNumber;
+        largestNumber = array[i];
+    } else if (array[i] > secondLargestNumber && array[i] != largestNumber) {
+        secondLargestNumber = array[i];
+    }
+
+}
+
+if (secondLargestNumber == Integer.MIN_VALUE) {
+    System.out.println("Second largest element does not exist");
+} else {
+    System.out.println("Second Largest Element : " + secondLargestNumber);
+}
+```
+
+---
+
+## Approach
+
+- Assume the first element is the largest.
+- Store the second largest element as `Integer.MIN_VALUE`.
+- Traverse the array once.
+- If a larger element is found:
+    - Update the second largest with the previous largest.
+    - Update the largest.
+- Otherwise, update the second largest if the current element is greater and different from the largest.
+- Print the second largest element if it exists.
+
+---
+
+## Time Complexity
+
+```
+O(n)
+```
+
+---
+
+## Space Complexity
+
+```
+O(1)
+```
+
+---
+
+## Edge Cases
+
+- Single element array
+- Duplicate largest elements
+- All elements are equal
+- Negative numbers

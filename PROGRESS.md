@@ -12,7 +12,7 @@ Target: **300+ Problems**
 
 - [x] DSA #001 - Largest Element
 - [x] DSA #002 - Smallest Element
-- [ ] DSA #003 - Second Largest Element
+- [x] DSA #003 - Second Largest Element
 - [ ] DSA #004 - Second Smallest Element
 - [ ] DSA #005 - Sum of Array Elements
 - [ ] DSA #006 - Average of Array

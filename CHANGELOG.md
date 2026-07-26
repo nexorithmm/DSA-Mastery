@@ -25,3 +25,15 @@ All notable changes to this project will be documented here.
 - Implemented an optimal single-pass solution.
 - Documented time and space complexity.
 - Added explanation and edge cases.
+
+---
+
+## DSA #003 - Second Largest Element in Array
+
+### Added
+
+- Solved the Second Largest Element in Array problem.
+- Implemented an optimal single-pass solution.
+- Handled duplicate largest values.
+- Added edge case when a second largest element does not exist.
+- Documented time and space complexity.

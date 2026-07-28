@@ -33,24 +33,24 @@ public class SecondLargestElement {
 
         int[] array = {10, 25, 8, 25, 15};
 
-        int largestNumber = array[0];
-        int secondLargestNumber = Integer.MIN_VALUE;
+        int largestElement = array[0];
+        int secondLargestElement = Integer.MIN_VALUE;
 
         for(int i = 1; i < array.length; i++){
 
-            if(array[i] > largestNumber){
-                secondLargestNumber = largestNumber;
-                largestNumber = array[i];
-            } else if (array[i] > secondLargestNumber && array[i] != largestNumber) {
-                secondLargestNumber = array[i];
+            if(array[i] > largestElement){
+                secondLargestElement = largestElement;
+                largestElement = array[i];
+            } else if (array[i] > secondLargestElement && array[i] != largestElement) {
+                secondLargestElement = array[i];
             }
 
         }
 
-        if(secondLargestNumber == Integer.MIN_VALUE){
+        if(secondLargestElement == Integer.MIN_VALUE){
             System.out.println("Second largest element does not exist");
         }else {
-            System.out.println("Second Largest Element : "+secondLargestNumber);
+            System.out.println("Second Largest Element : "+secondLargestElement);
         }
 
     }

@@ -84,7 +84,93 @@ Example:
 
 ✅ Solved
 
+--- 
+
+
+# DSA #004 - Second Smallest Element in Array
+
+## Problem Statement
+
+Given an integer array, find the **second smallest distinct element**.
+
+### Example
+
+Input:
+
+```text
+[10, 25, 8, 25, 15]
+```
+
+Output:
+
+```text
+10
+```
+
 ---
+
+## Java Solution
+
+```java
+int[] array = {10, 25, 8, 25, 15};
+
+int smallestElement = array[0];
+int secondSmallestElement = Integer.MAX_VALUE;
+
+for (int i = 1; i < array.length; i++) {
+
+    if (array[i] < smallestElement) {
+        secondSmallestElement = smallestElement;
+        smallestElement = array[i];
+    } else if (array[i] < secondSmallestElement && array[i] != smallestElement) {
+        secondSmallestElement = array[i];
+    }
+}
+
+if (secondSmallestElement == Integer.MAX_VALUE) {
+    System.out.println("Second smallest element does not exist.");
+} else {
+    System.out.println("Second Smallest Element : " + secondSmallestElement);
+}
+```
+
+---
+
+## Approach
+
+- Assume the first element is the smallest.
+- Initialize the second smallest element as `Integer.MAX_VALUE`.
+- Traverse the array only once.
+- If a smaller element is found:
+  - Update the second smallest with the previous smallest.
+  - Update the smallest element.
+- Otherwise, update the second smallest if the current element is smaller than it and different from the smallest.
+- Print the second smallest element if it exists.
+
+---
+
+## Time Complexity
+
+```
+O(n)
+```
+
+---
+
+## Space Complexity
+
+```
+O(1)
+```
+
+---
+
+## Edge Cases
+
+- Single element array
+- Duplicate smallest elements
+- All elements are equal
+- Negative numbers
 
 # DSA #002 - Smallest Element in Array
 

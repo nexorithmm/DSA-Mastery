@@ -37,3 +37,15 @@ All notable changes to this project will be documented here.
 - Handled duplicate largest values.
 - Added edge case when a second largest element does not exist.
 - Documented time and space complexity.
+-
+
+
+## DSA #004 - Second Smallest Element in Array
+
+### Added
+
+- Solved the Second Smallest Element in Array problem.
+- Implemented an optimal single-pass solution.
+- Handled duplicate smallest values.
+- Added edge case when a second smallest element does not exist.
+- Documented time and space complexity.

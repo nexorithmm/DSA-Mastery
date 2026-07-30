@@ -60,6 +60,7 @@ Graphs
 - ✅ DSA #002 - Smallest Element
 - ✅ DSA #003 - Second Largest Element
 - ✅ DSA #004 - Second Smallest Element
+- ✅ DSA #005 – Sum of Array Elements
 
 ---
 

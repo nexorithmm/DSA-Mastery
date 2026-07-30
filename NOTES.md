@@ -338,3 +338,82 @@ O(1)
 - Duplicate largest elements
 - All elements are equal
 - Negative numbers
+-
+
+# DSA #005 – Sum of Array Elements
+
+## 📖 Problem Statement
+
+Given an integer array, find the sum of all its elements.
+
+### Example
+
+**Input:**
+
+```text
+[10, 20, 30, 40, 50]
+```
+
+**Output:**
+
+```text
+150
+```
+
+---
+
+## 💡 Approach
+
+1. Initialize a variable `sum` with `0`.
+2. Traverse the array using a loop.
+3. Add each element to `sum`.
+4. Print the final sum.
+
+---
+
+## ✅ Java Solution
+
+```java
+int[] array = {10, 20, 30, 40, 50};
+int sum = 0;
+
+for (int i = 0; i < array.length; i++) {
+    sum += array[i];
+}
+
+System.out.println("Sum of Array Elements : " + sum);
+```
+
+---
+
+## 🧮 Dry Run
+
+| Index | Element | Sum |
+|-------|---------|-----|
+| 0 | 10 | 10 |
+| 1 | 20 | 30 |
+| 2 | 30 | 60 |
+| 3 | 40 | 100 |
+| 4 | 50 | 150 |
+
+---
+
+## ⏱️ Complexity Analysis
+
+**Time Complexity:** `O(n)`
+
+- Every element is visited exactly once.
+
+**Space Complexity:** `O(1)`
+
+- Only one extra variable (`sum`) is used.
+
+---
+
+## 🌍 Real-World Applications
+
+- Calculating total sales
+- Finding total marks of students
+- Computing total expenses
+- Inventory quantity calculation
+- Financial reporting

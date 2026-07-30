@@ -1,108 +1,56 @@
-# 🚀 DSA Mastery Progress
+# 💚 DSA Mastery Progress
 
-## Progress
-
-Completed: **1**
-
-Target: **300+ Problems**
+> Goal: Master Data Structures & Algorithms by solving problems from basic to advanced while preparing for coding interviews.
 
 ---
 
-# 🟢 Arrays
+## 📊 Progress
 
-- [x] DSA #001 - Largest Element
-- [x] DSA #002 - Smallest Element
-- [x] DSA #003 - Second Largest Element
-- [x] DSA #004 - Second Smallest Element
-- [ ] DSA #005 - Sum of Array Elements
-- [ ] DSA #006 - Average of Array
-- [ ] DSA #007 - Count Even & Odd Numbers
-- [ ] DSA #008 - Reverse Array
-- [ ] DSA #009 - Check if Array is Sorted
-- [ ] DSA #010 - Remove Duplicates
+**Completed:** 5 / 300+
 
 ---
 
-# 🟡 Hashing
+## ✅ Arrays
 
-- [ ] Frequency Count
-- [ ] Highest Frequency Element
-- [ ] Lowest Frequency Element
-
----
-
-# 🔵 Two Pointers
-
-- [ ] Remove Duplicates
-- [ ] Pair Sum
+- ✅ DSA #001 – Largest Element in an Array
+- ✅ DSA #002 – Smallest Element in an Array
+- ✅ DSA #003 – Second Largest Element in an Array
+- ✅ DSA #004 – Second Smallest Element in an Array
+- ✅ DSA #005 – Sum of Array Elements
 
 ---
 
-# 🟣 Sliding Window
+## ⏳ Upcoming Topics
 
-- [ ] Maximum Sum Subarray
-- [ ] Longest Substring Without Repeating Characters
-
----
-
-# 🟠 Binary Search
-
-- [ ] Binary Search
-- [ ] Lower Bound
-- [ ] Upper Bound
-- [ ] Search Insert Position
-
----
-
-# 🔴 Strings
-
-- [ ] Reverse String
-- [ ] Palindrome
-- [ ] Anagram
-- [ ] Count Vowels
+- ⬜ DSA #006 – Average of Array Elements
+- ⬜ DSA #007 – Count Even & Odd Numbers
+- ⬜ DSA #008 – Find Maximum & Minimum
+- ⬜ DSA #009 – Reverse an Array
+- ⬜ DSA #010 – Copy an Array
+- ⬜ DSA #011 – Merge Two Arrays
+- ⬜ DSA #012 – Linear Search
+- ⬜ DSA #013 – Binary Search
+- ⬜ DSA #014 – Check if Array is Sorted
+- ⬜ DSA #015 – Remove Duplicates
 
 ---
 
-# 🟤 Linked List
+## 🎯 Learning Goals
 
-- [ ] Reverse Linked List
-- [ ] Middle Node
-- [ ] Detect Cycle
-
----
-
-# ⚫ Stack
-
-- [ ] Valid Parentheses
-- [ ] Next Greater Element
+- ✔ Master Arrays
+- ✔ Learn Searching Techniques
+- ✔ Understand Sorting Algorithms
+- ✔ Solve Pattern-Based Problems
+- ✔ Prepare for Coding Interviews
+- ✔ Build Strong Problem-Solving Skills
+- ✔ Reach 300+ DSA Problems
 
 ---
 
-# ⚪ Queue
+## 🚀 Repository
 
-- [ ] Implement Queue
-- [ ] Circular Queue
+**GitHub:** DSA-Mastery
 
----
+**Author:** Nexorithmm
 
-# 🟢 Trees
-
-- [ ] DFS
-- [ ] BFS
-- [ ] Height of Tree
-- [ ] Diameter of Tree
-
----
-
-# 🔵 Graphs
-
-- [ ] BFS
-- [ ] DFS
-- [ ] Cycle Detection
-- [ ] Topological Sort
-
----
-
-# 🏁 Goal
-
-Complete the roadmap with consistent daily practice and maintain clean, interview-ready Java solutions.
+**Tagline:** Build • Learn • Improve

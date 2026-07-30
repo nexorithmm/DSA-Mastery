@@ -49,3 +49,18 @@ All notable changes to this project will be documented here.
 - Handled duplicate smallest values.
 - Added edge case when a second smallest element does not exist.
 - Documented time and space complexity.
+-
+
+
+## DSA #005 – Sum of Array Elements
+
+### Added
+
+- Problem Statement
+- Java Solution
+- Dry Run Table
+- Time Complexity Analysis
+- Space Complexity Analysis
+- Real-World Applications
+- Notes Documentation
+- Progress Update

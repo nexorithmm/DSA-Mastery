@@ -64,3 +64,16 @@ All notable changes to this project will be documented here.
 - Real-World Applications
 - Notes Documentation
 - Progress Update
+-
+
+## DSA #006 – Average of Array Elements
+
+### Added
+
+- Average of Array Elements algorithm
+- Java implementation
+- Complexity analysis
+- Output example
+- Key points
+- Real-world applications
+- Progress update

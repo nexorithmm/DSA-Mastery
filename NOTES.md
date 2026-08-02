@@ -417,3 +417,82 @@ System.out.println("Sum of Array Elements : " + sum);
 - Computing total expenses
 - Inventory quantity calculation
 - Financial reporting
+-
+
+# DSA #006 – Average of Array Elements
+
+## 📖 Introduction
+
+The average of an array is calculated by adding all the elements and dividing the sum by the total number of elements.
+
+This problem helps in understanding array traversal, accumulation, and type casting.
+
+---
+
+## 💡 Algorithm
+
+1. Initialize a variable `sum` to 0.
+2. Traverse the array.
+3. Add each element to `sum`.
+4. Divide `sum` by the total number of elements.
+5. Type cast `sum` to `double` before division.
+
+---
+
+## 💻 Java Solution
+
+```java
+public class AverageOfArrayElements {
+
+    public static void main(String[] args) {
+
+        int[] array = {10, 20, 30, 40, 51};
+
+        int n = array.length;
+        int sum = 0;
+
+        for (int value : array) {
+            sum += value;
+        }
+
+        double average = (double) sum / n;
+
+        System.out.printf("Average of Array Elements : %.2f", average);
+    }
+}
+```
+
+---
+
+## 🖥️ Output
+
+```text
+Average of Array Elements : 30.20
+```
+
+---
+
+## 📊 Complexity
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+---
+
+## 🌍 Real-World Applications
+
+- Student marks average
+- Employee salary analysis
+- Sensor data processing
+- Sales analytics
+- Performance reports
+
+---
+
+## 📌 Key Points
+
+- Traverse the array once.
+- Use an enhanced for-loop for readability.
+- Cast to `double` before division.
+- `printf("%.2f")` displays two decimal places.

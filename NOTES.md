@@ -496,3 +496,76 @@ Average of Array Elements : 30.20
 - Use an enhanced for-loop for readability.
 - Cast to `double` before division.
 - `printf("%.2f")` displays two decimal places.
+-
+
+# 💚 DSA #007 - Count Even and Odd Numbers
+
+## 📖 Problem Statement
+
+Given an integer array, count the number of even and odd elements.
+
+---
+
+## 💡 Logic
+
+- Traverse the array.
+- Check each element using the modulus (%) operator.
+- If the remainder is 0, increment the even counter.
+- Otherwise, increment the odd counter.
+
+---
+
+## 💻 Java Program
+
+```java
+int[] array = {10, 25, 8, 17, 30, 41, 56};
+
+int evenCount = 0;
+int oddCount = 0;
+
+for (int element : array) {
+
+    if (element % 2 == 0) {
+        evenCount++;
+    } else {
+        oddCount++;
+    }
+}
+
+System.out.println("Even Count : " + evenCount);
+System.out.println("Odd Count  : " + oddCount);
+```
+
+---
+
+## 📊 Output
+
+```
+Even Count : 4
+Odd Count  : 3
+```
+
+---
+
+## ⏱️ Time Complexity
+
+```
+O(n)
+```
+
+---
+
+## 💾 Space Complexity
+
+```
+O(1)
+```
+
+---
+
+## ✅ Key Points
+
+- Even Number → number % 2 == 0
+- Odd Number → number % 2 != 0
+- Traverse the array only once.
+- Interview-friendly solution.

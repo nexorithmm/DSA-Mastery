@@ -62,6 +62,7 @@ Graphs
 - ✅ DSA #004 - Second Smallest Element
 - ✅ DSA #005 – Sum of Array Elements
 - ✅ DSA #006 – Average of Array Elements
+- ✅ DSA #007 - Count Even and Odd Numbers
 
 ---
 

@@ -18,12 +18,12 @@ Completed: 6 / 100+
 - ✅ DSA #004 – Second Smallest Element
 - ✅ DSA #005 – Sum of Array Elements
 - ✅ DSA #006 – Average of Array Elements
+- ✅ DSA #007 - Count Even and Odd Numbers
 
 ---
 
 ## ⏳ Upcoming Topics
 
-- ⬜ DSA #007 – Count Even and Odd Numbers
 - ⬜ DSA #008 – Maximum and Minimum Element
 - ⬜ DSA #009 – Reverse an Array
 - ⬜ DSA #010 – Check if Array is Sorted

@@ -77,3 +77,16 @@ All notable changes to this project will be documented here.
 - Key points
 - Real-world applications
 - Progress update
+-
+
+## DSA #007 - Count Even and Odd Numbers
+
+### Added
+
+- Problem Statement
+- Java Solution
+- Algorithm
+- Complexity Analysis
+- Interview Questions
+- Cheat Sheet
+- Professional Cover

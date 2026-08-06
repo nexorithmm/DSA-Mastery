@@ -569,3 +569,86 @@ O(1)
 - Odd Number → number % 2 != 0
 - Traverse the array only once.
 - Interview-friendly solution.
+---
+
+# 💚 DSA #008 - Count Positive, Negative & Zero Elements
+
+## 📖 Problem Statement
+
+Given an integer array, count the number of:
+- Positive elements
+- Negative elements
+- Zero elements
+
+Print the total count of each category.
+
+---
+
+## 💡 Logic
+
+- Initialize three counters:
+  - positiveCount
+  - negativeCount
+  - zeroCount
+- Traverse the array once.
+- If the element is greater than 0, increment positiveCount.
+- If the element is less than 0, increment negativeCount.
+- Otherwise, increment zeroCount.
+
+---
+
+## 💻 Java Program
+
+```java
+int[] array = {10, -5, 0, 25, -8, 0, 15, -2};
+
+int positiveCount = 0;
+int negativeCount = 0;
+int zeroCount = 0;
+
+for (int number : array) {
+
+    if (number > 0) {
+        positiveCount++;
+    } else if (number < 0) {
+        negativeCount++;
+    } else {
+        zeroCount++;
+    }
+}
+
+System.out.println("Positive Count : " + positiveCount);
+System.out.println("Negative Count : " + negativeCount);
+System.out.println("Zero Count     : " + zeroCount);
+```
+
+---
+
+## 📊 Output
+
+```
+Positive Count : 3
+Negative Count : 3
+Zero Count     : 2
+```
+
+---
+
+## ⏱️ Time Complexity
+
+O(n)
+
+---
+
+## 💾 Space Complexity
+
+O(1)
+
+---
+
+## ✅ Key Points
+
+- Traverse the array only once.
+- Use comparison operators to categorize elements.
+- Maintain separate counters for each category.
+- Efficient solution with constant extra space.

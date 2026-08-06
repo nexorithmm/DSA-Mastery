@@ -77,7 +77,20 @@ All notable changes to this project will be documented here.
 - Key points
 - Real-world applications
 - Progress update
--
+---
+
+## DSA #008 - Count Positive, Negative & Zero Elements
+
+### Added
+
+- Problem Statement
+- Java Solution
+- Output
+- Time Complexity
+- Space Complexity
+- Cheat Sheet
+- Interview Questions
+- Professional Cover
 
 ## DSA #007 - Count Even and Odd Numbers
 
@@ -89,4 +102,18 @@ All notable changes to this project will be documented here.
 - Complexity Analysis
 - Interview Questions
 - Cheat Sheet
+- Professional Cover
+----
+
+## DSA #008 - Count Positive, Negative & Zero Elements
+
+### Added
+
+- Problem Statement
+- Java Solution
+- Output
+- Time Complexity
+- Space Complexity
+- Cheat Sheet
+- Interview Questions
 - Professional Cover

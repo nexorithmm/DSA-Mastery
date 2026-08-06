@@ -63,6 +63,7 @@ Graphs
 - ✅ DSA #005 – Sum of Array Elements
 - ✅ DSA #006 – Average of Array Elements
 - ✅ DSA #007 - Count Even and Odd Numbers
+- ✅ DSA #008 - Count Positive, Negative & Zero Elements
 
 ---
 

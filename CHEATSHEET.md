@@ -228,3 +228,63 @@ O(1)
 ## 🎯 Interview Tip
 
 The modulus (%) operator is the simplest and most common way to determine whether a number is even or odd.
+---
+
+# 💚 DSA Cheat Sheet
+
+## Count Positive, Negative & Zero Elements
+
+### 🧠 Logic
+
+Traverse the array once.
+
+If number > 0
+
+→ Positive Count++
+
+Else if number < 0
+
+→ Negative Count++
+
+Else
+
+→ Zero Count++
+
+---
+
+### 📝 Algorithm
+
+positiveCount = 0
+
+negativeCount = 0
+
+zeroCount = 0
+
+For each element
+
+If element > 0
+positiveCount++
+
+Else if element < 0
+negativeCount++
+
+Else
+zeroCount++
+
+---
+
+### ⚡ Time Complexity
+
+O(n)
+
+---
+
+### 💾 Space Complexity
+
+O(1)
+
+---
+
+### 🎯 Interview Tip
+
+Use comparison operators (`>`, `<`, `==`) to classify values while traversing the array only once.

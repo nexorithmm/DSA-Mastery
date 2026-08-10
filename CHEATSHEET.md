@@ -288,3 +288,52 @@ O(1)
 ### 🎯 Interview Tip
 
 Use comparison operators (`>`, `<`, `==`) to classify values while traversing the array only once.
+---
+
+---
+
+## 💚 DSA #009 - Reverse an Array
+
+### 🔄 Two Pointer Technique
+
+```java
+int i = 0;
+int j = array.length - 1;
+
+while (i < j) {
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+
+    i++;
+    j--;
+}
+```
+
+### 🧠 Key Idea
+
+```text
+i → Start
+j → End
+
+Swap → Move → Swap → Move
+```
+
+### ⚡ Complexity
+
+```text
+Time  → O(n)
+Space → O(1)
+```
+
+### 📌 Remember
+
+```text
+Reverse traversal ≠ Actual reversal
+
+Reverse traversal:
+Print from end → array remains unchanged
+
+Two pointers:
+Swap from both ends → array is reversed in-place
+```

@@ -20,12 +20,11 @@ Completed: 6 / 100+
 - ✅ DSA #006 – Average of Array Elements
 - ✅ DSA #007 - Count Even and Odd Numbers
 - ✅ DSA #008 - Count Positive, Negative & Zero Elements
-
+- ✅ DSA #009 - Reverse an Array
 ---
 
 ## ⏳ Upcoming Topics
 
-- ⬜ DSA #009 – Reverse an Array
 - ⬜ DSA #010 – Check if Array is Sorted
 
 ---

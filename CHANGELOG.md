@@ -117,3 +117,23 @@ All notable changes to this project will be documented here.
 - Cheat Sheet
 - Interview Questions
 - Professional Cover
+---
+
+---
+
+## 💚 DSA #009 - Reverse an Array
+
+### Added
+
+- Reverse an Array problem
+- Two Pointer approach
+- In-place reversal
+- Element swapping
+- Dry-run explanation
+- Complexity analysis
+- Interview questions
+- Notes update
+- Progress update
+- Professional social media content
+
+```

@@ -652,3 +652,219 @@ O(1)
 - Use comparison operators to categorize elements.
 - Maintain separate counters for each category.
 - Efficient solution with constant extra space.
+---
+
+---
+
+# 💚 DSA #009 - Reverse an Array
+
+## 📌 Problem Statement
+
+Given an integer array, reverse the elements of the array **in-place**.
+
+### Example
+
+```text
+Input:
+[10, 20, 30, 40, 50]
+
+Output:
+[50, 40, 30, 20, 10]
+```
+
+---
+
+## 💡 Approach - Two Pointers
+
+We use two pointers:
+
+```text
+i → beginning of the array
+j → end of the array
+```
+
+While `i < j`:
+
+1. Swap `array[i]` and `array[j]`
+2. Increment `i`
+3. Decrement `j`
+4. Continue until the pointers meet
+
+---
+
+## 💻 Java Solution
+
+```java
+public class ReverseArray {
+
+    public static void main(String[] args) {
+
+        int[] array = {10, 20, 30, 40, 50};
+
+        int i = 0;
+        int j = array.length - 1;
+
+        while (i < j) {
+
+            int current = array[i];
+
+            array[i] = array[j];
+
+            array[j] = current;
+
+            i++;
+            j--;
+        }
+
+        for (int number : array) {
+            System.out.print(number + " ");
+        }
+    }
+}
+```
+
+### Output
+
+```text
+50 40 30 20 10
+```
+
+---
+
+## 🔍 Dry Run
+
+Initial:
+
+```text
+[10, 20, 30, 40, 50]
+ ↑                 ↑
+ i                 j
+```
+
+First swap:
+
+```text
+[50, 20, 30, 40, 10]
+     ↑           ↑
+     i           j
+```
+
+Second swap:
+
+```text
+[50, 40, 30, 20, 10]
+          ↑
+       center
+```
+
+Now:
+
+```text
+i >= j
+```
+
+Loop stops.
+
+---
+
+## ⚡ Complexity
+
+### Time Complexity
+
+```text
+O(n)
+```
+
+We perform approximately `n/2` swaps.
+
+```text
+O(n/2) → O(n)
+```
+
+### Space Complexity
+
+```text
+O(1)
+```
+
+Only one temporary variable is used.
+
+---
+
+## 🧠 Why Two Pointers?
+
+The two-pointer technique allows us to process the array from both ends.
+
+```text
+i → → →       ← ← ← j
+```
+
+We swap the corresponding elements and move toward the center.
+
+This allows the array to be reversed **in-place**.
+
+---
+
+## ❌ Reverse Traversal vs Actual Reversal
+
+Reverse traversal:
+
+```java
+for (int i = array.length - 1; i >= 0; i--) {
+    System.out.println(array[i]);
+}
+```
+
+Output:
+
+```text
+50
+40
+30
+20
+10
+```
+
+But the original array is still:
+
+```text
+[10, 20, 30, 40, 50]
+```
+
+Therefore, this is only **reverse traversal**.
+
+The two-pointer approach actually changes the array:
+
+```text
+Before:
+[10, 20, 30, 40, 50]
+
+After:
+[50, 40, 30, 20, 10]
+```
+
+---
+
+## 🎯 Key Learning
+
+```text
+Two Pointers
+     ↓
+Swap opposite elements
+     ↓
+Move toward center
+     ↓
+In-place reversal
+```
+
+---
+
+## 🏆 DSA #009 Status
+
+```text
+Problem   → Reverse an Array
+Technique → Two Pointers
+Time      → O(n)
+Space     → O(1)
+Status    → ✅ Completed
+```

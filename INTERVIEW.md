@@ -198,3 +198,105 @@ Only three counter variables are used regardless of the array size.
 - Duplicate values
 - Negative numbers
 - All zeros
+---
+
+---
+
+# 💚 DSA #009 - Reverse an Array
+
+### Q1. How can you reverse an array in-place?
+
+Use two pointers. One starts from the beginning and the other starts from the end. Swap the elements and move both pointers toward the center.
+
+---
+
+### Q2. What is the time complexity of reversing an array using two pointers?
+
+```text
+O(n)
+```
+
+Although only `n/2` swaps are performed, Big-O ignores the constant factor.
+
+```text
+O(n/2) → O(n)
+```
+
+---
+
+### Q3. What is the space complexity?
+
+```text
+O(1)
+```
+
+Because only a temporary variable is used for swapping and no additional array is created.
+
+---
+
+### Q4. Why can't we achieve O(log n) time for reversing an array?
+
+To reverse the complete array, the elements need to be processed. Therefore, the minimum time required is proportional to the number of elements.
+
+```text
+O(n)
+```
+
+is optimal.
+
+---
+
+### Q5. What is the difference between reverse traversal and actual reversal?
+
+### Reverse Traversal
+
+```java
+for (int i = array.length - 1; i >= 0; i--) {
+    System.out.println(array[i]);
+}
+```
+
+This only prints the elements in reverse order.
+
+The original array remains unchanged.
+
+### Actual Reversal
+
+Using two pointers:
+
+```java
+int i = 0;
+int j = array.length - 1;
+
+while (i < j) {
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+
+    i++;
+    j--;
+}
+```
+
+This changes the original array.
+
+---
+
+## 🎯 Interview Pattern
+
+```text
+Start → End
+  ↓      ↓
+  i      j
+
+while (i < j)
+    swap
+    i++
+    j--
+```
+
+### Key Interview Answer
+
+> The two-pointer technique reverses an array in-place by swapping elements from opposite ends and moving both pointers toward the center.
+
+**DSA #009 Interview Preparation — Completed ✅**

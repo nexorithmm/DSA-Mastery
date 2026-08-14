@@ -868,3 +868,182 @@ Time      → O(n)
 Space     → O(1)
 Status    → ✅ Completed
 ```
+
+# 💚 DSA #010 – Frequency of Elements
+
+## 📌 Problem Statement
+
+Given an integer array, find the frequency of each element.
+
+---
+
+### Example
+
+#### Input
+
+[1, 2, 2, 3, 1, 4, 2]
+
+#### Output
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+---
+
+# 💡 Approach 1 – Brute Force
+
+### Idea
+
+Use nested loops to count how many times each element occurs.
+
+We use a `boolean[] visited` array to avoid counting the same element again.
+
+### Code
+
+int[] array = {1, 2, 2, 3, 1, 4, 2};
+
+boolean[] visited = new boolean[array.length];
+
+for (int i = 0; i < array.length; i++) {
+
+    if (visited[i]) {
+        continue;
+    }
+
+    int count = 0;
+
+    for (int j = 0; j < array.length; j++) {
+
+        if (array[i] == array[j]) {
+            count++;
+            visited[j] = true;
+        }
+    }
+
+    System.out.println(array[i] + " -> " + count);
+}
+
+### Output
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+### Complexity
+
+Time: O(n²)
+
+Space: O(n)
+
+---
+
+# ⚡ Approach 2 – HashMap
+
+### Idea
+
+Use a `HashMap` to store:
+
+Element → Frequency
+
+For every element, increase its frequency by `1`.
+
+### Code
+
+int[] array = {1, 2, 2, 3, 1, 4, 2};
+
+HashMap<Integer, Integer> hashMap = new HashMap<>();
+
+for (int i = 0; i < array.length; i++) {
+hashMap.put(
+array[i],
+hashMap.getOrDefault(array[i], 0) + 1
+);
+}
+
+for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
+System.out.println(entry.getKey() + " -> " + entry.getValue());
+}
+
+### Output
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+---
+
+## 🧠 Key Concept
+
+hashMap.getOrDefault(array[i], 0) + 1
+
+If the element doesn't exist:
+
+0 + 1 = 1
+
+If the element already exists:
+
+existing frequency + 1
+
+---
+
+## 🔍 Dry Run
+
+Input:
+
+[1, 2, 2, 3, 1, 4, 2]
+
+1 → 1
+2 → 1
+2 → 2
+3 → 1
+1 → 2
+4 → 1
+2 → 3
+
+Final:
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+---
+
+# ⚖️ Comparison
+
+| Approach | Time | Space |
+|---|---|---|
+| Brute Force | O(n²) | O(n) |
+| HashMap | O(n) average | O(n) |
+
+---
+
+## 🎯 Key Takeaway
+
+The brute-force approach helps us understand the problem using nested loops.
+
+The HashMap approach is better because it reduces the time complexity from O(n²) to O(n) average.
+
+### Remember
+
+Frequency Problem
+↓
+Think HashMap
+↓
+Element → Count
+
+---
+
+## ✅ DSA #010 Completed
+
+Topic: Frequency of Elements
+
+Brute Force: O(n²)
+
+Optimal: O(n) average
+
+Space: O(n)

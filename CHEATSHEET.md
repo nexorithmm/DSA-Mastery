@@ -337,3 +337,118 @@ Print from end → array remains unchanged
 Two pointers:
 Swap from both ends → array is reversed in-place
 ```
+
+# 💚 DSA #010 – Frequency of Elements
+
+## 🔑 Core Pattern
+
+Frequency Counting
+
+Element → Frequency
+
+Think HashMap whenever the problem asks:
+
+- How many times does each element occur?
+- Count occurrences
+- Find frequency
+- Count characters
+- Count duplicate values
+
+---
+
+## ⚡ Optimal Approach
+
+Use:
+
+HashMap<Integer, Integer> hashMap = new HashMap<>();
+
+Update frequency:
+
+hashMap.put(
+array[i],
+hashMap.getOrDefault(array[i], 0) + 1
+);
+
+---
+
+## 🧠 getOrDefault()
+
+hashMap.getOrDefault(key, 0)
+
+Means:
+
+Key exists    → return existing value
+Key not found → return 0
+
+Then:
+
+current frequency + 1
+
+---
+
+## 🔍 Example
+
+[1, 2, 2, 3, 1, 4, 2]
+
+Final frequency:
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+---
+
+## 🐢 Brute Force
+
+Technique:
+
+Nested Loops
++
+visited[]
+
+Complexity:
+
+Time  → O(n²)
+Space → O(n)
+
+---
+
+## 🚀 Optimal
+
+Technique:
+
+HashMap
+
+Complexity:
+
+Time  → O(n) average
+Space → O(n)
+
+---
+
+## ⚖️ Quick Comparison
+
+| Approach | Time | Space |
+|---|---|---|
+| Brute Force | O(n²) | O(n) |
+| HashMap | O(n) average | O(n) |
+
+---
+
+## 🎯 Interview Shortcut
+
+Frequency / Count Occurrences
+↓
+HashMap
+↓
+Element → Count
+
+---
+
+## 💡 Remember
+
+Brute Force → Understand
+HashMap     → Optimize
+
+DSA #010 — Completed ✅

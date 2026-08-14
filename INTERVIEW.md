@@ -300,3 +300,108 @@ while (i < j)
 > The two-pointer technique reverses an array in-place by swapping elements from opposite ends and moving both pointers toward the center.
 
 **DSA #009 Interview Preparation — Completed ✅**
+---
+
+# 💚 DSA #010 – Frequency of Elements
+
+## 🎯 Interview Questions & Answers
+
+### 1. How do you find the frequency of each element in an array?
+
+Use a HashMap where the element is the key and its frequency is the value.
+
+For every element, increase its count using getOrDefault().
+
+Time Complexity: O(n) average
+Space Complexity: O(n)
+
+---
+
+### 2. Why is HashMap preferred over nested loops?
+
+Nested loops require O(n²) time because the array may be traversed repeatedly.
+
+HashMap allows us to count frequencies in a single traversal on average.
+
+Brute Force → O(n²)
+HashMap → O(n) average
+
+Therefore, HashMap is more efficient for frequency-counting problems.
+
+---
+
+### 3. What is the purpose of getOrDefault()?
+
+getOrDefault() returns the existing value associated with a key.
+
+If the key does not exist, it returns the specified default value.
+
+Example:
+
+hashMap.getOrDefault(array[i], 0)
+
+If the element exists:
+→ returns its current frequency
+
+If the element doesn't exist:
+→ returns 0
+
+Then we add 1 to update the frequency.
+
+---
+
+### 4. How does the brute-force approach avoid duplicate output?
+
+A boolean visited[] array is used.
+
+When an element is counted, all positions containing that element are marked as visited.
+
+When the outer loop reaches an already visited position, it skips that position.
+
+This prevents the same element from being counted and printed again.
+
+---
+
+### 5. What is the difference between the two approaches?
+
+Brute Force:
+
+Time  → O(n²)
+Space → O(n)
+
+Technique → Nested loops + visited[]
+
+HashMap:
+
+Time  → O(n) average
+Space → O(n)
+
+Technique → HashMap frequency counting
+
+HashMap is the preferred approach when additional space is allowed.
+
+---
+
+## 🧠 Interview Tip
+
+If the interviewer says:
+
+"Count the frequency of elements."
+
+Immediately think:
+
+Array
+↓
+HashMap
+↓
+Element → Frequency
+
+---
+
+## 🔥 Key Interview Statement
+
+"I can solve the problem using nested loops in O(n²) time, but an efficient approach is to use a HashMap for frequency counting, which reduces the average time complexity to O(n) while using O(n) additional space."
+
+---
+
+## ✅ DSA #010 Interview Ready

@@ -137,3 +137,21 @@ All notable changes to this project will be documented here.
 - Professional social media content
 
 ```
+
+## 💚 DSA #010 - Frequency of Elements
+
+### Added
+
+- Frequency of Elements problem
+- Brute Force approach using nested loops
+- boolean[] visited approach
+- HashMap frequency counting approach
+- getOrDefault() usage
+- Dry-run explanation
+- Brute Force vs HashMap comparison
+- Complexity analysis
+- Interview questions
+- Notes update
+- Cheatsheet update
+- Progress update
+- Professional social media content

@@ -21,11 +21,8 @@ Completed: 6 / 100+
 - ✅ DSA #007 - Count Even and Odd Numbers
 - ✅ DSA #008 - Count Positive, Negative & Zero Elements
 - ✅ DSA #009 - Reverse an Array
+- ✅ DSA #010 – Frequency of Elements
 ---
-
-## ⏳ Upcoming Topics
-
-- ⬜ DSA #010 – Check if Array is Sorted
 
 ---
 

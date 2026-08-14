@@ -65,6 +65,7 @@ Graphs
 - ✅ DSA #007 - Count Even and Odd Numbers
 - ✅ DSA #008 - Count Positive, Negative & Zero Elements
 - ✅ DSA #009 - Reverse an Array
+- ✅ DSA #010 – Frequency of Elements
 
 ---
 

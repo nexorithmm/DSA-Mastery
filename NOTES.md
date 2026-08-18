@@ -1047,3 +1047,333 @@ Brute Force: O(n²)
 Optimal: O(n) average
 
 Space: O(n)
+---
+
+# DSA #011 — Find Duplicate Elements
+
+## 📌 Problem
+
+Given an integer array, find and print all the elements that appear more than once.
+
+Each duplicate element should be printed only once.
+
+### Example
+
+Input:
+[1, 2, 3, 2, 2, 4, 1]
+
+Output:
+2
+1
+
+---
+
+## 🧠 Approach 1 — Brute Force
+
+Use nested loops to compare each element with the elements that come after it.
+
+### Idea
+
+Choose an element
+↓
+Compare it with the remaining elements
+↓
+If the same element is found
+↓
+Duplicate found
+
+### Complexity
+
+Time Complexity → O(n²)
+
+Space Complexity → O(1)
+
+### Key Point
+
+The brute-force approach does not require an additional data structure.
+
+---
+
+## 🧠 Approach 2 — HashSet
+
+A HashSet stores unique elements.
+
+While traversing the array:
+
+If the element already exists in the HashSet
+↓
+Duplicate found
+
+Otherwise
+↓
+Add the element to the HashSet.
+
+### Example
+
+Input:
+
+[1, 2, 3, 2, 4, 1]
+
+Process:
+
+1 → add
+2 → add
+3 → add
+2 → already exists → duplicate
+4 → add
+1 → already exists → duplicate
+
+### Complexity
+
+Time Complexity → O(n) average
+
+Space Complexity → O(n)
+
+### Important
+
+A single HashSet can detect repeated elements.
+
+However, if an element occurs multiple times, simply printing whenever contains() returns true can print the same duplicate multiple times.
+
+Example:
+
+[1, 1, 1]
+
+A basic HashSet approach may print:
+
+1
+1
+
+Additional logic is required to print each duplicate only once.
+
+---
+
+## 🧠 Approach 3 — Two HashSets
+
+Use two HashSets.
+
+### First HashSet
+
+Tracks elements that have already been seen.
+
+### Second HashSet
+
+Tracks duplicates that have already been printed.
+
+### Idea
+
+First HashSet
+↓
+Check whether the element was already seen
+↓
+If yes → duplicate
+
+Second HashSet
+↓
+Check whether the duplicate was already printed
+↓
+If no → print it
+
+### Example
+
+Input:
+
+[1, 2, 3, 2, 2, 4, 1]
+
+Output:
+
+2
+1
+
+Even though 2 appears three times, it is printed only once.
+
+### Complexity
+
+Time Complexity → O(n) average
+
+Space Complexity → O(n)
+
+---
+
+## 🧠 Approach 4 — HashMap
+
+Use a HashMap to store the frequency of every element.
+
+The structure is:
+
+element → frequency
+
+### Example
+
+Input:
+
+[1, 2, 3, 2, 2, 4, 1]
+
+Frequency:
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+Then print elements whose frequency is greater than 1.
+
+### Java Pattern
+
+hashMap.put(array[i], hashMap.getOrDefault(array[i], 0) + 1);
+
+### Checking Frequency
+
+if (entry.getValue() > 1) {
+System.out.println(entry.getKey());
+}
+
+### Complexity
+
+Time Complexity → O(n) average
+
+Space Complexity → O(n)
+
+---
+
+## 🧠 Approach 5 — O(1) Extra Space
+
+If constant extra space is required, use a nested-loop approach without HashSet or HashMap.
+
+### Idea
+
+For each element:
+
+Check whether it appeared earlier
+↓
+If yes → skip
+
+Otherwise:
+
+Check whether it appears later
+↓
+If yes → duplicate found
+↓
+Print it
+
+This prevents the same duplicate from being printed multiple times without using an additional data structure.
+
+### Complexity
+
+Time Complexity → O(n²)
+
+Space Complexity → O(1)
+
+---
+
+## 🔍 Approach Comparison
+
+| Approach | Time Complexity | Space Complexity |
+|---|---:|---:|
+| Brute Force | O(n²) | O(1) |
+| HashSet | O(n) average | O(n) |
+| Two HashSets | O(n) average | O(n) |
+| HashMap | O(n) average | O(n) |
+| O(1) Space Approach | O(n²) | O(1) |
+
+---
+
+## 💡 Key Learnings
+
+### HashSet
+
+Use HashSet when you need to check:
+
+Have I seen this element before?
+
+### HashMap
+
+Use HashMap when you need to know:
+
+How many times did this element occur?
+
+### Brute Force
+
+Use nested loops when:
+
+- Extra space should be avoided
+- Simplicity is more important than time efficiency
+- Input constraints are small
+
+### Important Trade-off
+
+We can choose between:
+
+O(n²) Time + O(1) Space
+
+or:
+
+O(n) Average Time + O(n) Space
+
+The best approach depends on the problem constraints.
+
+---
+
+## 🧪 Dry Run — HashMap Approach
+
+Input:
+
+[1, 2, 3, 2, 2, 4, 1]
+
+Build the frequency map:
+
+1 → 1
+2 → 1
+3 → 1
+2 → 2
+2 → 3
+4 → 1
+1 → 2
+
+Final frequency:
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+Elements with frequency greater than 1:
+
+1
+2
+
+Therefore:
+
+Duplicate Elements:
+1
+2
+
+---
+
+## 📂 Repository Information
+
+### Class Name
+
+FindDuplicateElements
+
+### Topic
+
+Arrays
+
+### Concepts Used
+
+- Array Traversal
+- Nested Loops
+- HashSet
+- HashMap
+- Frequency Counting
+- Duplicate Detection
+- Time Complexity
+- Space Complexity
+
+---
+
+## ✅ Status
+
+DSA #011 — Completed ✅
+

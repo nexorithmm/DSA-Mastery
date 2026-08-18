@@ -136,7 +136,7 @@ All notable changes to this project will be documented here.
 - Progress update
 - Professional social media content
 
-```
+---
 
 ## 💚 DSA #010 - Frequency of Elements
 
@@ -155,3 +155,57 @@ All notable changes to this project will be documented here.
 - Cheatsheet update
 - Progress update
 - Professional social media content
+
+---
+
+## [DSA #011] — Find Duplicate Elements
+
+### Added
+
+- Find Duplicate Elements problem
+- Brute-force approach using nested loops
+- HashSet approach
+- Two HashSets approach
+- HashMap frequency-counting approach
+- O(1) extra-space approach
+- Time and space complexity comparison
+- Duplicate detection patterns
+- Time-space trade-off analysis
+
+### Complexity
+
+Brute Force:
+- Time: O(n²)
+- Space: O(1)
+
+HashSet:
+- Time: O(n) average
+- Space: O(n)
+
+Two HashSets:
+- Time: O(n) average
+- Space: O(n)
+
+HashMap:
+- Time: O(n) average
+- Space: O(n)
+
+O(1) Space:
+- Time: O(n²)
+- Space: O(1)
+
+### Concepts
+
+- Array Traversal
+- Nested Loops
+- HashSet
+- HashMap
+- Frequency Counting
+- Duplicate Detection
+- Time Complexity
+- Space Complexity
+
+### Status
+
+Completed ✅
+

@@ -405,3 +405,245 @@ Element → Frequency
 ---
 
 ## ✅ DSA #010 Interview Ready
+---
+
+# DSA #011 — Find Duplicate Elements
+
+## 🎤 Interview Questions & Answers
+
+### Q1. How can you find duplicate elements in an array?
+
+There are multiple approaches:
+
+- Brute Force using nested loops
+- HashSet
+- HashMap
+
+The approach depends on the required time and space complexity.
+
+---
+
+### Q2. What is the time complexity of the brute-force approach?
+
+The brute-force approach uses nested loops.
+
+Time Complexity → O(n²)
+
+Space Complexity → O(1)
+
+---
+
+### Q3. Why is the brute-force approach O(n²)?
+
+For each element, we may compare it with every other element in the array.
+
+Therefore, the number of comparisons can grow approximately as:
+
+n × n
+
+So the time complexity is:
+
+O(n²)
+
+---
+
+### Q4. How can HashSet be used to find duplicates?
+
+A HashSet stores unique elements.
+
+While traversing the array:
+
+If the element already exists
+↓
+Duplicate found
+
+Otherwise
+↓
+Add the element
+
+Average complexity:
+
+Time → O(n)
+
+Space → O(n)
+
+---
+
+### Q5. What is the main advantage of HashSet?
+
+HashSet provides fast average-case lookup.
+
+It is useful when the main question is:
+
+"Have I seen this element before?"
+
+---
+
+### Q6. Why can a simple HashSet approach print the same duplicate multiple times?
+
+Consider:
+
+[1, 1, 1]
+
+The second `1` is detected as a duplicate.
+
+The third `1` is also detected as a duplicate.
+
+Therefore, simply printing whenever `contains()` returns true can produce:
+
+1
+1
+
+If each duplicate should be printed only once, additional tracking logic is required.
+
+---
+
+### Q7. Why would you use HashMap instead of HashSet?
+
+Use HashSet when you only need to know whether an element exists.
+
+Use HashMap when you need the frequency of each element.
+
+Example:
+
+HashSet:
+Have I seen 5?
+
+HashMap:
+How many times did 5 occur?
+
+---
+
+### Q8. How does HashMap solve the duplicate problem?
+
+Store each element as a key and its frequency as the value.
+
+Example:
+
+Input:
+[1, 2, 3, 2, 2, 4, 1]
+
+Frequency:
+
+1 → 2
+2 → 3
+3 → 1
+4 → 1
+
+Then print elements whose frequency is greater than 1.
+
+Average complexity:
+
+Time → O(n)
+
+Space → O(n)
+
+---
+
+### Q9. Can duplicate detection be solved using O(1) extra space?
+
+Yes.
+
+A brute-force approach can use:
+
+Time → O(n²)
+
+Space → O(1)
+
+The trade-off is that we use more time to avoid additional memory.
+
+---
+
+### Q10. What is the trade-off between Brute Force and HashMap?
+
+Brute Force:
+
+Time → O(n²)
+
+Space → O(1)
+
+HashMap:
+
+Time → O(n) average
+
+Space → O(n)
+
+So:
+
+Less Space
+↓
+More Time
+
+More Space
+↓
+Less Time
+
+---
+
+### Q11. What is the difference between HashSet and HashMap for this problem?
+
+| HashSet | HashMap |
+|---|---|
+| Stores unique elements | Stores key-value pairs |
+| Checks existence | Stores frequency |
+| Useful for duplicate detection | Useful for frequency counting |
+| O(n) average traversal | O(n) average traversal |
+| O(n) space | O(n) space |
+
+---
+
+### Q12. Which approach would you choose in an interview?
+
+First understand the constraints.
+
+If the interviewer prioritizes constant extra space:
+
+Brute Force / Sorting / Constraint-based approach
+
+If the interviewer prioritizes better time complexity:
+
+HashSet / HashMap
+
+---
+
+## 🧠 Interview Pattern
+
+Need to check existence?
+↓
+HashSet
+
+Need frequency/count?
+↓
+HashMap
+
+Need O(1) extra space?
+↓
+Brute Force / Sorting / Constraint-based approach
+
+---
+
+## 🎯 Interview Takeaway
+
+The important concept is not only finding duplicates.
+
+Understand the trade-off between:
+
+Time Complexity
+↕
+Space Complexity
+
+For this problem:
+
+Brute Force → O(n²) Time + O(1) Space
+
+HashSet → O(n) Average Time + O(n) Space
+
+HashMap → O(n) Average Time + O(n) Space
+
+Choose the approach based on the problem constraints.
+
+---
+
+## ✅ Status
+
+DSA #011 — Completed

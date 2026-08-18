@@ -452,3 +452,106 @@ Brute Force → Understand
 HashMap     → Optimize
 
 DSA #010 — Completed ✅
+---
+
+# DSA #011 — Find Duplicate Elements
+
+## 📌 Problem
+
+Find all elements that appear more than once in an integer array.
+
+Each duplicate element should be reported only once.
+
+## 🧠 Approaches
+
+### Brute Force
+
+Use nested loops to compare elements.
+
+Time → O(n²)
+
+Space → O(1)
+
+### HashSet
+
+Use HashSet to check whether an element has already been seen.
+
+Time → O(n) average
+
+Space → O(n)
+
+### Two HashSets
+
+Use one HashSet for seen elements and another HashSet to track duplicates that have already been printed.
+
+Time → O(n) average
+
+Space → O(n)
+
+### HashMap
+
+Store:
+
+element → frequency
+
+Then print elements whose frequency is greater than 1.
+
+Time → O(n) average
+
+Space → O(n)
+
+### O(1) Extra Space
+
+Use nested loops without an additional data structure.
+
+Time → O(n²)
+
+Space → O(1)
+
+## 🔍 Comparison
+
+| Approach | Time | Space |
+|---|---:|---:|
+| Brute Force | O(n²) | O(1) |
+| HashSet | O(n) average | O(n) |
+| Two HashSets | O(n) average | O(n) |
+| HashMap | O(n) average | O(n) |
+| O(1) Space | O(n²) | O(1) |
+
+## 🎯 Pattern
+
+Need to check whether an element was seen?
+
+→ HashSet
+
+Need frequency/count?
+
+→ HashMap
+
+Need constant extra space?
+
+→ Brute Force / Sorting / Constraint-based approach
+
+## 💡 Key Takeaway
+
+The main trade-off is:
+
+O(n²) Time + O(1) Space
+
+vs.
+
+O(n) Average Time + O(n) Space
+
+Choose the approach according to the problem constraints.
+
+## 📂 Repository
+
+Class Name → FindDuplicateElements
+
+Topic → Arrays
+
+Concepts → Array Traversal, Nested Loops, HashSet, HashMap, Frequency Counting, Duplicate Detection
+
+## ✅ Status
+
+DSA #011 — Completed

@@ -66,7 +66,9 @@ Graphs
 - ✅ DSA #008 - Count Positive, Negative & Zero Elements
 - ✅ DSA #009 - Reverse an Array
 - ✅ DSA #010 – Frequency of Elements
-- ✅ DSA #010 – Find Duplicate Elements
+- ✅ DSA #011 – Find Duplicate Elements
+- ✅ DSA #012 - Move Zeroes
+- ✅ DSA #013 - Missing Number
 
 ---
 

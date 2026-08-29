@@ -1377,3 +1377,112 @@ Arrays
 
 DSA #011 — Completed ✅
 
+---
+## DSA #012 — Move Zeroes
+
+### Problem
+Given an integer array `nums`, move all `0`s to the end of the array while maintaining the relative order of the non-zero elements.
+
+The array must be modified in-place.
+
+### Example
+
+Input:
+`[0, 1, 0, 3, 12]`
+
+Output:
+`[1, 3, 12, 0, 0]`
+
+### Approach 1 — Two Passes
+
+Use a pointer `j` to place every non-zero element at the next available position.
+
+Then fill the remaining positions with `0`.
+
+### Approach 2 — One Pass Using Swapping ⭐
+
+Use two pointers:
+
+- `i` → scans the array
+- `j` → tracks the position for the next non-zero element
+
+When a non-zero element is found, swap it with the element at `j`, then increment `j`.
+
+### Complexity
+
+Time Complexity: `O(n)`
+
+Space Complexity: `O(1)`
+
+### Key Insight
+
+Maintain a pointer representing the position where the next non-zero element should be placed.
+
+---
+
+## DSA #013 — Missing Number
+
+### Problem
+Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return the only number missing from the array.
+
+### Example
+
+Input:
+`[3, 0, 1]`
+
+Output:
+`2`
+
+The numbers from `0` to `3` should be:
+
+`0 1 2 3`
+
+But `2` is missing.
+
+### Another Example
+
+Input:
+`[0, 1]`
+
+Output:
+`2`
+
+### Approach 1 — Mathematical Sum
+
+The expected sum of numbers from `0` to `n` is:
+
+`n * (n + 1) / 2`
+
+Calculate the expected sum and subtract the actual array sum.
+
+### Approach 2 — XOR ⭐
+
+XOR has two important properties:
+
+`x ^ x = 0`
+
+`x ^ 0 = x`
+
+When all numbers from `0` to `n` are XORed with all numbers in the array, matching numbers cancel out and the missing number remains.
+
+### Complexity
+
+Time Complexity: `O(n)`
+
+Space Complexity: `O(1)`
+
+### Key Insight
+
+The XOR approach finds the missing number without requiring an additional data structure.
+
+---
+
+## 🧠 Patterns Learned
+
+### DSA #012
+Two Pointers / In-Place Array Manipulation
+
+### DSA #013
+XOR Pattern / Mathematical Approach
+
+---

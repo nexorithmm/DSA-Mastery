@@ -209,3 +209,53 @@ O(1) Space:
 
 Completed ✅
 
+---
+
+## [DSA #012] — Move Zeroes
+
+### Added
+- Added the Move Zeroes problem.
+- Added the problem statement and examples.
+- Added the Two-Pass approach.
+- Added the One-Pass Two-Pointer / Swap approach.
+- Added the Java solution.
+- Added time and space complexity.
+- Added the Two Pointers pattern to the learning notes.
+- Added interview questions and answers.
+
+### Complexity
+- Time: `O(n)`
+- Space: `O(1)`
+
+### Pattern
+**Two Pointers + In-Place Array Manipulation**
+
+---
+
+## [DSA #013] — Missing Number
+
+### Added
+- Added the Missing Number problem.
+- Added the problem statement and examples.
+- Added the Mathematical Sum approach.
+- Added the XOR approach.
+- Added the Java solution.
+- Added time and space complexity.
+- Added the XOR pattern to the learning notes.
+- Added interview questions and answers.
+
+### Complexity
+- Time: `O(n)`
+- Space: `O(1)`
+
+### Patterns
+**Mathematical Sum + XOR + Array Traversal**
+
+---
+
+## Progress Update
+
+- DSA #012 — Move Zeroes ✅
+- DSA #013 — Missing Number ✅
+
+

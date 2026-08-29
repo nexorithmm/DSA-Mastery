@@ -647,3 +647,118 @@ Choose the approach based on the problem constraints.
 ## ✅ Status
 
 DSA #011 — Completed
+
+---
+
+
+## #012 — Move Zeroes
+
+### Basic Questions
+
+**1. What is the goal of the Move Zeroes problem?**
+
+Move all zeroes to the end of the array while maintaining the relative order of all non-zero elements.
+
+**2. Can we use another array to solve this problem?**
+
+A solution can use extra space, but the preferred solution modifies the original array in-place with `O(1)` extra space.
+
+**3. What technique can be used to solve Move Zeroes efficiently?**
+
+The **Two Pointers** technique.
+
+**4. What do the two pointers represent?**
+
+- `i` scans the array.
+- `j` tracks the position where the next non-zero element should be placed.
+
+**5. What is the optimal time complexity?**
+
+`O(n)`
+
+**6. What is the optimal space complexity?**
+
+`O(1)`
+
+**7. What is the difference between the two approaches we learned?**
+
+The two-pass approach first moves all non-zero values and then fills the remaining positions with zeroes.
+
+The one-pass approach uses two pointers and swaps elements while traversing the array.
+
+---
+
+## #013 — Missing Number
+
+### Basic Questions
+
+**1. What is the goal of the Missing Number problem?**
+
+Given `n` distinct numbers in the range `[0, n]`, find the only number missing from the array.
+
+**2. What approaches can be used to solve this problem?**
+
+Two approaches we learned:
+
+- Mathematical Sum
+- XOR
+
+**3. How does the Mathematical Sum approach work?**
+
+Calculate the expected sum of numbers from `0` to `n` using:
+
+`n * (n + 1) / 2`
+
+Then subtract the actual array sum from the expected sum.
+
+**4. What is the time complexity of the Mathematical Sum approach?**
+
+`O(n)`
+
+**5. What is the space complexity of the Mathematical Sum approach?**
+
+`O(1)`
+
+**6. How does the XOR approach work?**
+
+XOR all numbers from `0` to `n` with all elements of the array.
+
+All matching numbers cancel because:
+
+`x ^ x = 0`
+
+and:
+
+`x ^ 0 = x`
+
+The remaining value is the missing number.
+
+**7. What is the time complexity of the XOR approach?**
+
+`O(n)`
+
+**8. What is the space complexity of the XOR approach?**
+
+`O(1)`
+
+**9. Which approach is preferred for interviews?**
+
+The XOR approach is a strong solution because it achieves `O(n)` time and `O(1)` extra space without relying on the sum formula.
+
+---
+
+## Quick Interview Revision
+
+### Move Zeroes
+Pattern: **Two Pointers**
+
+Time: `O(n)`
+
+Space: `O(1)`
+
+### Missing Number
+Patterns: **Mathematical Sum / XOR**
+
+Time: `O(n)`
+
+Space: `O(1)`

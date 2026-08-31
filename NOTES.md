@@ -1486,3 +1486,163 @@ Two Pointers / In-Place Array Manipulation
 XOR Pattern / Mathematical Approach
 
 ---
+
+# DSA Mastery — Notes
+
+## 🟢 DSA #014 — Remove Duplicates from Sorted Array
+
+### Problem
+
+Given a sorted integer array, remove the duplicates in-place so that each unique element appears only once.
+
+Return the number of unique elements in the array.
+
+The relative order of the unique elements must be maintained.
+
+### Example
+
+Input:
+[1, 1, 2]
+
+Output:
+2
+
+Modified Array:
+[1, 2, _]
+
+### Another Example
+
+Input:
+[0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+
+Output:
+5
+
+Modified Array:
+[0, 1, 2, 3, 4, _, _, _, _, _]
+
+Only the first 5 positions contain the valid unique elements.
+
+---
+
+## Approach 1 — Brute Force
+
+Use an extra data structure such as a HashSet to store unique elements.
+
+### Steps
+
+1. Create a HashSet.
+2. Traverse the array.
+3. Add each element to the HashSet.
+4. Copy the unique elements back into the array.
+5. Return the number of unique elements.
+
+### Complexity
+
+Time Complexity: O(n)
+
+Space Complexity: O(n)
+
+### Limitation
+
+This approach uses extra memory, so it does not satisfy the optimal O(1) extra-space requirement.
+
+---
+
+## Approach 2 — Two Pointers ⭐
+
+Because the array is sorted, duplicate elements are always adjacent.
+
+We use:
+
+- `i` → scans the array.
+- `j` → position where the next unique element should be placed.
+- `temp` → stores the last unique element.
+- `count` → number of unique elements.
+
+### Steps
+
+1. Handle the empty-array edge case.
+2. Consider the first element unique.
+3. Start scanning from index `1`.
+4. Compare `array[i]` with `temp`.
+5. If they are different:
+  - Place `array[i]` at `array[j]`.
+  - Increment `j`.
+  - Update `temp`.
+  - Increment `count`.
+6. Return `count`.
+
+### Java Solution
+
+class RemoveDuplicates {
+
+    public static int removeDuplicates(int[] array) {
+
+        if (array.length == 0) {
+            return 0;
+        }
+
+        int count = 1;
+        int temp = array[0];
+        int j = 1;
+
+        for (int i = 1; i < array.length; i++) {
+
+            if (array[i] != temp) {
+                array[j++] = array[i];
+                temp = array[i];
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+
+### Complexity
+
+Time Complexity: O(n)
+
+Space Complexity: O(1)
+
+### Edge Cases
+
+- Empty array → return `0`
+- Single element → return `1`
+- All elements are duplicates → return `1`
+- No duplicates → return array length
+- Multiple duplicates → handled correctly
+
+### Important Note
+
+The remaining positions after the unique elements do not need to be changed.
+
+For example:
+
+[1, 1, 2, 2, 3]
+
+After processing:
+
+[1, 2, 3, 2, 3]
+
+Only the first `3` positions are considered valid:
+
+[1, 2, 3]
+
+### Key Insight
+
+Since the array is sorted, duplicates are adjacent.
+
+Therefore, we only need to compare the current element with the last unique element.
+
+### Pattern
+
+Two Pointers + In-Place Array Manipulation
+
+### Final Complexity
+
+Time: O(n)
+Space: O(1)
+
+⭐ Optimal Approach: Two Pointers

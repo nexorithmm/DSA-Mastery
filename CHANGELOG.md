@@ -253,9 +253,28 @@ Completed ✅
 
 ---
 
-## Progress Update
+## [DSA #014] — Remove Duplicates from Sorted Array
 
-- DSA #012 — Move Zeroes ✅
-- DSA #013 — Missing Number ✅
+### Added
+- Added the Remove Duplicates from Sorted Array problem.
+- Added the problem statement and examples.
+- Added the Brute Force approach using `HashSet`.
+- Added the Optimal Two-Pointer approach.
+- Added an in-place array modification solution.
+- Added an empty-array edge case.
+- Added interview questions and explanations.
+- Added the Two Pointers pattern.
+- Added time and space complexity analysis.
+
+### Complexity
+
+#### Brute Force
+- Time: `O(n)`
+- Space: `O(n)`
+
+#### Optimal — Two Pointers ⭐
+- Time: `O(n)`
+- Space: `O(1)`
+
 
 

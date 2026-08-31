@@ -649,3 +649,120 @@ Space: `O(1)`
 | #012 Move Zeroes | Two Pointers / Swap ⭐ | O(n) | O(1) |
 | #013 Missing Number | Mathematical Sum | O(n) | O(1) |
 | #013 Missing Number | XOR ⭐ | O(n) | O(1) |
+---
+
+# DSA Mastery — Cheatsheet
+
+## 🟢 DSA #014 — Remove Duplicates from Sorted Array
+
+### Problem
+
+Given a sorted integer array, remove duplicates in-place so that each unique element appears only once.
+
+Return the number of unique elements.
+
+### Example
+
+Input:
+[1, 1, 2]
+
+Output:
+2
+
+Valid portion:
+[1, 2]
+
+---
+
+## Approach 1 — Brute Force
+
+Use an extra `HashSet` to store unique elements.
+
+### Steps
+
+1. Create a `HashSet`.
+2. Traverse the array.
+3. Add each element to the set.
+4. Copy unique elements back into the array.
+5. Return the set size.
+
+### Complexity
+
+Time: O(n)
+
+Space: O(n)
+
+### Limitation
+
+Uses extra space.
+
+---
+
+## Approach 2 — Two Pointers ⭐
+
+Because the array is sorted, duplicates are adjacent.
+
+Use:
+
+- `i` → scans the array.
+- `j` → position for the next unique element.
+- `temp` → last unique element.
+- `count` → number of unique elements.
+
+### Logic
+
+If:
+
+`array[i] != temp`
+
+then:
+
+`array[j++] = array[i]`
+
+Update:
+
+`temp = array[i]`
+
+and:
+
+`count++`
+
+### Edge Case
+
+If the array is empty:
+
+`return 0`
+
+### Important
+
+The remaining positions after the unique elements do not matter.
+
+Example:
+
+`[1, 1, 2, 2, 3]`
+
+Valid result:
+
+`[1, 2, 3]`
+
+Return:
+
+`3`
+
+### Complexity
+
+Time: O(n)
+
+Space: O(1)
+
+### Pattern
+
+**Two Pointers + In-Place Array Manipulation**
+
+### ⭐ Optimal Approach
+
+Two Pointers
+
+Time: O(n)
+
+Space: O(1)

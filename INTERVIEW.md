@@ -762,3 +762,106 @@ Patterns: **Mathematical Sum / XOR**
 Time: `O(n)`
 
 Space: `O(1)`
+---
+
+# DSA Mastery — Interview Questions
+
+## 🟢 DSA #014 — Remove Duplicates from Sorted Array
+
+### Basic Questions
+
+**1. What is the problem asking us to do?**
+
+Remove duplicate elements from a sorted array in-place so that every unique element appears only once, and return the number of unique elements.
+
+**2. Why does the fact that the array is sorted help us?**
+
+Because duplicate elements are always adjacent to each other.
+
+**3. Which pattern is used in the optimal solution?**
+
+Two Pointers.
+
+**4. What are the two pointers used for?**
+
+- `i` scans the array.
+- `j` tracks the position where the next unique element should be placed.
+
+**5. What is the purpose of `temp` in our solution?**
+
+`temp` stores the last unique element so we can compare it with the current element.
+
+**6. Why do we start `i` from index 1?**
+
+The first element is automatically considered unique, so we start checking from the second element.
+
+**7. What happens when `array[i] != temp`?**
+
+The current element is unique, so we place it at `array[j]`, update `temp`, increment `j`, and increment `count`.
+
+**8. What happens when `array[i] == temp`?**
+
+The element is a duplicate, so we skip it.
+
+**9. Why don't we need to modify the remaining positions of the array?**
+
+Only the first `count` positions contain the valid unique elements. The remaining positions are irrelevant to the result.
+
+**10. What should we return for an empty array?**
+
+`0`, because an empty array contains zero unique elements.
+
+**11. What is the time complexity of the optimal solution?**
+
+`O(n)`
+
+**12. What is the space complexity of the optimal solution?**
+
+`O(1)`
+
+**13. What is the brute-force approach?**
+
+Use an extra data structure such as a `HashSet` to store unique elements and then copy them back into the array.
+
+**14. What is the complexity of the brute-force approach?**
+
+Time: `O(n)`
+
+Space: `O(n)`
+
+**15. Why is the two-pointer approach better?**
+
+Both approaches take `O(n)` time, but the two-pointer approach uses only `O(1)` extra space and modifies the original array in-place.
+
+---
+
+## 🧠 Interview Explanation
+
+A good way to explain the optimal solution:
+
+"Because the array is sorted, duplicate elements are adjacent. I use two pointers. The `i` pointer scans the array, while `j` points to the position where the next unique element should be placed. Whenever I find a value different from the last unique value, I place it at index `j` and increment the pointers. This gives O(n) time and O(1) extra space."
+
+---
+
+## 🔥 Quick Revision
+
+Problem:
+**Remove Duplicates from Sorted Array**
+
+Pattern:
+**Two Pointers**
+
+Requirement:
+**In-Place**
+
+Time:
+`O(n)`
+
+Space:
+`O(1)`
+
+Edge Case:
+**Empty array → return 0**
+
+Optimal:
+**Two Pointers ⭐**
